@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
+    "open": "cypress open",
     "lint": "tslint --project cypress/tsconfig.json cypress/**/*.ts"
   },
   "repository": {
