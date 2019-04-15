@@ -5,3 +5,9 @@ language: node_js
 cache:
   directories:
     - "node_modules"
+jobs:
+  inlcude:
+    - stage: lint
+      script: npm run lint
+    - stage: test
+      script: npm test
