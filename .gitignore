@@ -1,0 +1,9 @@
+### Ignore for NodeJs
+node_modules
+
+### Ignore for cypress
+cypress/videos
+cypress/screenshots
+
+### Ignore for VsCode
+.vscode
