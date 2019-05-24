@@ -26,6 +26,7 @@ describe('Given a page to practice automation', () => {
           'Wait Commands',
           'WebElement Commands']
       });
+      personalInformationPage.submit();
     });
     it('should have a title', () => {
       personalInformationPage.getPageTitle()
