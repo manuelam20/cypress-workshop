@@ -7,3 +7,5 @@ cypress/screenshots
 
 ### Ignore for VsCode
 .vscode
+
+mochawesome-report

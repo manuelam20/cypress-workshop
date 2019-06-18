@@ -4,7 +4,8 @@
   "description": "\tThis is a Workshop about Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "pretest": "rm -rf mochawesome-report",
+    "test": "cypress run && mochawesome-merge --reportDir mochawesome-report > mochawesome-report/output.json && marge mochawesome-report/output.json",
     "open": "cypress open",
     "lint": "tslint --project cypress/tsconfig.json cypress/**/*.ts"
   },
@@ -26,6 +27,10 @@
   "homepage": "https://github.com/manuelam20/cypress-workshop#readme",
   "dependencies": {
     "@cypress/webpack-preprocessor": "^4.0.3",
+    "marge": "^1.0.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.0.1",
+    "mochawesome-merge": "^2.0.1",
     "ts-loader": "^5.4.5",
     "webpack": "^4.32.2"
   },
