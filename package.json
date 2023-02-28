@@ -30,7 +30,7 @@
     "webpack": "^4.32.2"
   },
   "devDependencies": {
-    "cypress": "^3.3.1",
+    "cypress": "^12.7.0",
     "tslint": "^5.15.0",
     "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.4.3"
